@@ -2,8 +2,8 @@
 // Database connection for local development
 $servername = "localhost";
 $username = "root";
-$password = "migikatanochou";
-$dbname = "mysample";
+$password = "my_password";
+$dbname = "my_sample";
 
 // データベース接続の作成
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -66,7 +66,7 @@ $result = $conn->query($sql);
         }
         echo "</table>";
     } else {
-        echo "データがありません。";
+        echo "選手情報がありません。";
     }
 
     // データベース接続を最後に閉じる
